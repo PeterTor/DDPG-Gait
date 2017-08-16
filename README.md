@@ -2,7 +2,7 @@
 Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al., 2015) in the fields of deep reinforcement learning opened a new field for robot locomotion. Reinforcement learning is a form of machine learning by trial & error. The Robot can evaluate the goodness of a state and is trying to advance in order to maximize its reward. By applying deep neural networks we try to generate more complex robot locomotion. 
 
 ##  
-[Image](src)
+<img src="robot/render.jpg" alt="hi" class="inline"/>
 
 ## a robot learns to walk 
 
