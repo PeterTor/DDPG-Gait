@@ -21,7 +21,7 @@ Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
 
 ### The model 
-The following pseudocode tries to show the DDPG Algorithm by (Lillicrap et al., 2015). <br>
+The following pseudocode shows the DDPG Algorithm by (Lillicrap et al., 2015). <br>
 <img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
 
 The critic is trained by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair. The actor on the other hand can be trained by directly applying the gradient in line 14. 
