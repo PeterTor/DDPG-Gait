@@ -1,24 +1,25 @@
 ## Overview:
 Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al., 2015) in the fields of deep reinforcement learning opened a new field for robot locomotion. Reinforcement learning is a form of machine learning by trial & error. The Robot can evaluate the goodness of a state and is trying to advance in order to maximize its reward. By applying deep neural networks we try to generate more complex robot locomotion. 
 
-## quadrupedal robot
+## The quadrupedal robot
 In order to research in the field of model free gait generation we created a quadrupedal robot. By using deep neural networks we try to generate stable walking gaits and even more complex moving tasks. 
 <img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
-The robot has three degrees of freedom per leg and is also completely simulable.
+The robot has three degrees of freedom per leg and is also completely simulable in V-Rep.
+We try to transfer the learned behavior later to the real robot shown in the following picture:
+<img src="robot/real_small.jpg" alt="hi" class="inline" width="40%"/>
 
-![alt-text-1](robot/render.jpg "title-1") ![alt-text-2](robot/render.jpg "title-2")
 
-
-## a robot learns to walk 
+## A robot learns to walk 
 The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the agent always tries to follow the red dot.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIs9NMIHulU" frameborder="0" allowfullscreen></iframe>
 
 In order to define a reward we define this simple equation:
 ![alt-text-1](http://mathurl.com/ybfraejf.png)
-wherby delta is the distance to the red object for time t. 
+wherby delta is the distance to the red object at time t. 
 The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
-
-a second neural network the robot is able to choose actions from an continuous state thus the discrete leg positions in Figure 2 are no longer needed. This is what we call DDPG-Gait. The second neural network generates the 12 continuous servo positions directly. It does so by getting judged from the first neural network, that evaluates the state and actions taken by trying to maximize its reward. As you can see in Figure 4 and the following short-video the neural networks are already able to generate natural looking walking gaits https://youtu.be/wtXgWrfSXJA. Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
+Our approach is called DDPG-Gait. It consists of two neural networks
+The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
+Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
 
 
 # References:
