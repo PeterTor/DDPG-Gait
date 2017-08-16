@@ -21,12 +21,16 @@ The first neural network (the actor) generates the 12 continuous servo positions
 ### The model 
 The following pseudocode tries to show the DDPG Algorithm by (Lillicrap et al., 2015). <br>
 <img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
-The critic is training by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair.  
-Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
 
-In order to define a reward we define this simple equation:<br>
-![alt-text-1](http://mathurl.com/ybfraejf.png)<br>
-Wherby delta is the distance to the red object at time t in the video. 
+The critic is trained by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair. The actor on the other hand can be trained by directly applying the gradient in line 14. 
+The equation was derived by (Silver et al., 2014). 
+
+However state, reward, actions and the enviornment need to be defined:
+
+1. **Environment_** The Enviornment is given by the Simulator. 
+2. **Actions** the most straighforward approach is to define the actions by a 12 dimensional vector ![alt-text-1](http://mathurl.com/yd8axedl.png). Wherby theta defines the servo angle at time t.
+3. **State** the state can be defined as action taken in t-1. However in order to localize the agent relative to the red ball we added angle and distance relative to an abritary aim. 
+4. **Reward** In order to get an reward we defined the moved distance from time t-1 to t. ![alt-text-1](http://mathurl.com/ybfraejf.png)
 
 ### Results
 The following picture shows the learned gait pattern when the robot is walking straightforward.<br>
@@ -36,8 +40,8 @@ As you can see it follows a natural trot gait by always lifting the diagonally o
 # Acknowledgement
 We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Titan X Pascal GPU used for this research.
 # References:
-[Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
+[Continuous control with deep reinforcement learning, (Lillicrap et al., 2015)](https://arxiv.org/abs/1509.02971) 
 
-[Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
+[Playing Atari with Deep Reinforcement Learning, (Mnih et al., 2013)](https://arxiv.org/abs/1312.5602)
 
-
+[Deterministic Policy Gradient, (Silver et al. 2014)](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Applications_files/deterministic-policy-gradients.pdf) 
