@@ -32,6 +32,9 @@ Wherby delta is the distance to the red object at time t in the video.
 The following picture shows the learned gait pattern when the robot is walking straightforward.<br>
 <img src="robot/diagram.png" alt="hi" class="inline" width="70%"/> <br>
 As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
+
+# Acknowledgement
+We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Titan X Pascal GPU used for this research.
 # References:
 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
 
