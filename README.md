@@ -5,20 +5,9 @@ Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al.
 In order to research in the field of model free gait generation we created a quadrupedal robot. By using deep neural networks we try to generate stable walking gaits and even more complex moving tasks. 
 <img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
 The robot has three degrees of freedom per leg and is also completely simulable.
-div class="image123">
-    <div style="float:left;margin-right:5px;">
-        <img src="robot/render.jpg" height="200" width="200"  />
-        <p style="text-align:center;">This is image 1</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img class="middle-img" src="robot/render.jpg" height="200" width="200" />
-        <p style="text-align:center;">This is image 2</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="robot/render.jpg" height="200" width="200" />
-        <p style="text-align:center;">This is image 3</p>
-    </div>
-</div>
+
+![alt-text-1](robot/render.jpg "title-1") ![alt-text-2](robot/render.jpg "title-2")
+
 
 ## a robot learns to walk 
 The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the agent always tries to follow the red dot.
