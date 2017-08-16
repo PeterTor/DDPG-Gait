@@ -17,11 +17,14 @@ In order to define a reward we define this simple equation:
 ![alt-text-1](http://mathurl.com/ybfraejf.png)
 wherby delta is the distance to the red object at time t. 
 The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
-Our approach is called DDPG-Gait. It consists of two neural networks
+Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
 Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
+The following pseudocode tries to show how the Algorithm by (Lillicrap et al., 2015) works.
 
-
+The following picture shows the learned gait pattern (walking straightforward)
+![alt-text-1](robot/diagram.png)
+As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
 # References:
 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
 [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
