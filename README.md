@@ -3,7 +3,8 @@ Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al.
 
 ## The quadrupedal robot
 In order to research in the field of model free gait generation we created a quadrupedal robot. By using deep neural networks we try to generate stable walking gaits and even more complex moving tasks. 
-<img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
+<img src="robot/render.jpg" alt="hi" class="inline" width="49%"/>
+<img src="robot/real_small.jpg" alt="hi" class="inline" width="49%"/>
 The robot has three degrees of freedom per leg and is also completely simulable in V-Rep.
 We try to transfer the learned behavior later to the real robot shown in the following picture:
 <img src="robot/real_small.jpg" alt="hi" class="inline" width="70%"/>
