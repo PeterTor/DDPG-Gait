@@ -55,8 +55,7 @@ In order to visualize this pattern we plotted a gait diagram. Every dot in the f
 As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
 
 The next video shows the results for the real robot.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PgDDAnZm7SE" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZHgOhR1QOPs" frameborder="0" allowfullscreen></iframe>
 
 # Acknowledgement
 We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Titan X Pascal GPU used for this research.
