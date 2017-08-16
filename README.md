@@ -1,45 +1,67 @@
-## Overview:
-Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al., 2015) in the fields of deep reinforcement learning opened a new field for robot locomotion. Reinforcement learning is a form of machine learning by trial & error. The Robot can evaluate the goodness of a state and is trying to advance in order to maximize its reward. By applying deep neural networks we try to generate more complex robot locomotion. 
+<!doctype html>
+<!--
 
-##  
-<img src="robot/render.jpg" alt="hi" class="inline"/>
+  Instructions:
 
-## a robot learns to walk 
+  - Save this file.
+  - Replace "USER" with your GitHub username.
+  - Replace "REPO" with your GitHub repo name.
+  - Replace "Your Project" with your project name.
+  - Upload this file (or commit to GitHub Pages).
 
-https://youtu.be/wtXgWrfSXJA
+  Customize as you see fit!
 
-# References:
-[Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
-[Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
+-->
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
 
-### Markdown
+  <title>Your Project</title>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  <!-- Flatdoc -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/legacy.js'></script>
+  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/flatdoc.js'></script>
 
-```markdown
-Syntax highlighted code block
+  <!-- Flatdoc theme -->
+  <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
+  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
 
-# Header 1
-## Header 2
-### Header 3
+  <!-- Meta -->
+  <meta content="Your Project" property="og:title">
+  <meta content="Your Project description goes here." name="description">
 
-- Bulleted
-- List
+  <!-- Initializer -->
+  <script>
+    Flatdoc.run({
+      fetcher: Flatdoc.github('USER/REPO')
+    });
+  </script>
+</head>
+<body role='flatdoc'>
 
-1. Numbered
-2. List
+  <div class='header'>
+    <div class='left'>
+      <h1>Your Project</h1>
+      <ul>
+        <li><a href='https://github.com/USER/REPO'>View on GitHub</a></li>
+        <li><a href='https://github.com/USER/REPO/issues'>Issues</a></li>
+      </ul>
+    </div>
+    <div class='right'>
+      <!-- GitHub buttons: see http://ghbtns.com -->
+      <iframe src="http://ghbtns.com/github-btn.html?user=USER&amp;repo=REPO&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    </div>
+  </div>
 
-**Bold** and _Italic_ and `Code` text
+  <div class='content-root'>
+    <div class='menubar'>
+      <div class='menu section' role='flatdoc-menu'></div>
+    </div>
+    <div role='flatdoc-content' class='content'></div>
+  </div>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WHAAAT/DDPG-Gait/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
