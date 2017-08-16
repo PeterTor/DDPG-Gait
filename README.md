@@ -3,7 +3,8 @@ Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al.
 
 ##  
 <img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
-
+![GitHub Logo](robot/render.jpg)
+Format: ![Alt Text](url)
 ## a robot learns to walk 
 
 https://youtu.be/wtXgWrfSXJA
