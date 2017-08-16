@@ -7,11 +7,11 @@ In order to research in the field of model free gait generation we created a qua
 The robot has three degrees of freedom per leg and is also completely simulable.
 div class="image123">
     <div style="float:left;margin-right:5px;">
-        <img src=""robot/render.jpg" height="200" width="200"  />
+        <img src="robot/render.jpg" height="200" width="200"  />
         <p style="text-align:center;">This is image 1</p>
     </div>
     <div style="float:left;margin-right:5px;">
-        <img class="middle-img" src=""robot/render.jpg" height="200" width="200" />
+        <img class="middle-img" src="robot/render.jpg" height="200" width="200" />
         <p style="text-align:center;">This is image 2</p>
     </div>
     <div style="float:left;margin-right:5px;">
