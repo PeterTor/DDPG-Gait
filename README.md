@@ -6,11 +6,11 @@ Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al.
 ## a robot learns to walk 
 The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the agent always tries to follow the red dot.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIs9NMIHulU" frameborder="0" allowfullscreen></iframe>
-
-![eq1](http://mathurl.com/ybfraejf)
+<img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
+In order to define a reward we define this simple equation:
+![eq1](http://mathurl.com/ybfraejf.png)
 Format: ![eq1](url)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wtXgWrfSXJA" frameborder="0" allowfullscreen></iframe>
+wherby delta is the distance to the red object for time t. 
 
 
 # References:
