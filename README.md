@@ -56,8 +56,9 @@ As you can see it follows a natural trot gait by always lifting the diagonally o
 # Acknowledgement
 We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Titan X Pascal GPU used for this research.
 # References:
-[Continuous control with deep reinforcement learning, (Lillicrap et al., 2015)](https://arxiv.org/abs/1509.02971) 
 
-[Playing Atari with Deep Reinforcement Learning, (Mnih et al., 2013)](https://arxiv.org/abs/1312.5602)
+[(Mnih et al., 2013), Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
 
-[Deterministic Policy Gradient, (Silver et al. 2014)](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Applications_files/deterministic-policy-gradients.pdf) 
+[(Silver et al. 2014), Deterministic Policy Gradient](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Applications_files/deterministic-policy-gradients.pdf) 
+
+[(Lillicrap et al., 2015), Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
