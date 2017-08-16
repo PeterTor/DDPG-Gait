@@ -31,7 +31,7 @@ However state, reward, actions and the enviornment need to be defined:
 2. **Actions** the most straighforward approach is to define the actions by a 12 dimensional vector <br> 
 
 <div align="center">
-<img src="http://mathurl.com/yd8axedl.pn" alt="hi" class="inline"/>
+<img src="http://mathurl.com/yd8axedl.png" alt="hi" class="inline"/>
 </div>
 
 . <br>
