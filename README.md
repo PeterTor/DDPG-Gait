@@ -14,10 +14,11 @@ The aim of this project is to teach an agent how to walk by itself. As you can s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIs9NMIHulU" frameborder="0" allowfullscreen></iframe>
 
 In order to define a reward we define this simple equation:
-
-![eq1](http://mathurl.com/ybfraejf.png)
-Format: ![eq1](url)
+![alt-text-1](http://mathurl.com/ybfraejf.png)
 wherby delta is the distance to the red object for time t. 
+The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
+
+a second neural network the robot is able to choose actions from an continuous state thus the discrete leg positions in Figure 2 are no longer needed. This is what we call DDPG-Gait. The second neural network generates the 12 continuous servo positions directly. It does so by getting judged from the first neural network, that evaluates the state and actions taken by trying to maximize its reward. As you can see in Figure 4 and the following short-video the neural networks are already able to generate natural looking walking gaits https://youtu.be/wtXgWrfSXJA. Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
 
 
 # References:
