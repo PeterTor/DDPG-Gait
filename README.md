@@ -1,8 +1,16 @@
-## Welcome to GitHub Pages
+## Overview:
+Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al., 2015) in the fields of deep reinforcement learning opened a new field for robot locomotion. Reinforcement learning is a form of machine learning by trial & error. The Robot can evaluate the goodness of a state and is trying to advance in order to maximize its reward. By applying deep neural networks we try to generate more complex robot locomotion. 
 
-You can use the [editor on GitHub](https://github.com/WHAAAT/DDPG-Gait/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##  
+[Image](src)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## a robot learns to walk 
+
+https://youtu.be/wtXgWrfSXJA
+
+# References:
+[Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
+[Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
 
 ### Markdown
 
