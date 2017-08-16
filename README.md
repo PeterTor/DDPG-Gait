@@ -43,8 +43,14 @@ Wherby theta defines the servo angle at time t.
 
 
 ### Results
-The following picture shows the learned gait pattern when the robot is walking straightforward.<br>
-<img src="robot/diagram.png" alt="hi" class="inline" width="70%"/> <br>
+The picture below shows the robot gait pattern. <br>
+<div align="center">
+<img src="robot/walking_straight.jpg" alt="hi" class="inline"/>
+</div>
+In order to visualize this pattern we plotted a gait diagram. Every dot in the following picture marks the time when the specific leg is lifted<br>
+<div align="center">
+<img src="robot/diagram.png" alt="hi" class="inline" width="70%"/>
+</div>
 As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
 
 # Acknowledgement
