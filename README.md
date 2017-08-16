@@ -10,23 +10,27 @@ We try to transfer the learned behavior later to the real robot that is shown in
 
 
 ## A robot learns to walk 
-The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the agent always tries to follow the red dot.
+The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the trained agent always tries to follow the red dot.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIs9NMIHulU" frameborder="0" allowfullscreen></iframe>
 
-In order to define a reward we define this simple equation:
-![alt-text-1](http://mathurl.com/ybfraejf.png)
-wherby delta is the distance to the red object at time t. 
 The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
 Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
 Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
 The following pseudocode tries to show how the Algorithm by (Lillicrap et al., 2015) works.
 
-The following picture shows the learned gait pattern (walking straightforward)
+In order to define a reward we define this simple equation:
+
+![alt-text-1](http://mathurl.com/ybfraejf.png)
+
+Wherby delta is the distance to the red object at time t. We are trying
+
+The following picture shows the learned gait pattern when the robot is walking straightforward.
 ![alt-text-1](robot/diagram.png)
 As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
 # References:
 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
+
 [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
 
 ### Markdown
