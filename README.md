@@ -6,7 +6,7 @@ In order to research in the field of model free gait generation we created a qua
 <img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
 The robot has three degrees of freedom per leg and is also completely simulable in V-Rep.
 We try to transfer the learned behavior later to the real robot shown in the following picture:
-<img src="robot/real_small.jpg" alt="hi" class="inline" width="40%"/>
+<img src="robot/real_small.jpg" alt="hi" class="inline" width="70%"/>
 
 
 ## A robot learns to walk 
