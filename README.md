@@ -28,7 +28,8 @@ The equation was derived by (Silver et al., 2014).
 However state, reward, actions and the enviornment need to be defined:
 
 1. **Environment_** The Enviornment is given by the Simulator. 
-2. **Actions** the most straighforward approach is to define the actions by a 12 dimensional vector <br> ![alt-text-1](http://mathurl.com/yd8axedl.png). Wherby theta defines the servo angle at time t.
+2. **Actions** the most straighforward approach is to define the actions by a 12 dimensional vector <br> ![alt-text-1](http://mathurl.com/yd8axedl.png). <br>
+Wherby theta defines the servo angle at time t.
 3. **State** the state can be defined as action taken in t-1. However in order to localize the agent relative to the red ball we added angle and distance relative to an abritary aim. 
 4. **Reward** In order to get an reward we defined the moved distance from time t-1 to t. ![alt-text-1](http://mathurl.com/ybfraejf.png)
 
