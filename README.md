@@ -24,7 +24,7 @@ The first neural network (the actor) generates the 12 continuous servo positions
 The following pseudocode shows the DDPG Algorithm by (Lillicrap et al., 2015). <br>
 <img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
 
-The critic is trained by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair. The actor on the other hand can be trained by directly applying the gradient in line 14. 
+The critic is trained by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus one Q-value per state-action pair. The actor on the other hand can be trained by directly applying the gradient in line 14. 
 The equation was derived by (Silver et al., 2014). 
 
 However state, reward, actions and the enviornment need to be defined:
@@ -37,7 +37,7 @@ However state, reward, actions and the enviornment need to be defined:
 </div>
 Wherby theta defines the servo angle at time t.
 3. **State** the state can be defined as action taken in t-1. However in order to localize the agent relative to the red ball we added angle and distance relative to an abritary aim. 
-4. **Reward** In order to get an reward we defined the moved distance from time t-1 to t. 
+4. **Reward** In order to get a reward we defined the moved distance from time t-1 to t. 
 <div align="center">
 <img src="http://mathurl.com/ybfraejf.png" alt="hi" class="inline"/>
 </div>
