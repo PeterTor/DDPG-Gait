@@ -4,8 +4,8 @@ Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al.
 ##  
 <img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
 ## a robot learns to walk 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wtXgWrfSXJA" frameborder="0" allowfullscreen></iframe>
 
-https://youtu.be/wtXgWrfSXJA
 
 # References:
 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
