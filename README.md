@@ -2,12 +2,12 @@
 Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al., 2015) in the fields of deep reinforcement learning opened a new field for robot locomotion. Reinforcement learning is a form of machine learning by trial & error. The Robot can evaluate the goodness of a state and is trying to advance in order to maximize its reward. By applying deep neural networks we try to generate more complex robot locomotion. 
 
 ## The quadrupedal robot
-In order to research in the field of model free gait generation we created a quadrupedal robot. By using deep neural networks we try to generate stable walking gaits and even more complex moving tasks. 
+In order to research in the field of model free gait generation we created a quadrupedal robot. By using deep neural networks we try to generate stable walking gaits and even more complex moving tasks. <br>
 <img src="robot/render.jpg" alt="hi" class="inline" width="49%"/>
-<img src="robot/real_small.jpg" alt="hi" class="inline" width="49%"/>
+<img src="robot/real_small.jpg" alt="hi" class="inline" width="49%"/> <br>
 The robot has three degrees of freedom per leg and is also completely simulable in V-Rep.
 We try to transfer the learned behavior later to the real robot shown in the following picture:
-<img src="robot/real_small.jpg" alt="hi" class="inline" width="70%"/>
+
 
 
 ## A robot learns to walk 
