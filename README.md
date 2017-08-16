@@ -1,13 +1,31 @@
 ## Overview:
 Recent publications from DeepMind like (Mnih et al., 2013) and (Lillicrap et al., 2015) in the fields of deep reinforcement learning opened a new field for robot locomotion. Reinforcement learning is a form of machine learning by trial & error. The Robot can evaluate the goodness of a state and is trying to advance in order to maximize its reward. By applying deep neural networks we try to generate more complex robot locomotion. 
 
-##  
+## quadrupedal robot
+In order to research in the field of model free gait generation we created a quadrupedal robot. By using deep neural networks we try to generate stable walking gaits and even more complex moving tasks. 
 <img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
+The robot has three degrees of freedom per leg and is also completely simulable.
+div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src=""robot/render.jpg" height="200" width="200"  />
+        <p style="text-align:center;">This is image 1</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img class="middle-img" src=""robot/render.jpg" height="200" width="200" />
+        <p style="text-align:center;">This is image 2</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="robot/render.jpg" height="200" width="200" />
+        <p style="text-align:center;">This is image 3</p>
+    </div>
+</div>
+
 ## a robot learns to walk 
 The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the agent always tries to follow the red dot.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIs9NMIHulU" frameborder="0" allowfullscreen></iframe>
-<img src="robot/render.jpg" alt="hi" class="inline" width="70%"/>
+
 In order to define a reward we define this simple equation:
+
 ![eq1](http://mathurl.com/ybfraejf.png)
 Format: ![eq1](url)
 wherby delta is the distance to the red object for time t. 
