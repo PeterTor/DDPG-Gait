@@ -12,7 +12,8 @@ The robot has three degrees of freedom per leg and is also completely simulable 
 We try to transfer the learned behavior later to the real robot that is shown in the picture above.
 
 ## A robot learns to walk 
-The aim of this project is to teach an agent how to walk by itself. As you can see in the following video the trained agent always tries to follow the red dot.
+The aim of this project is to teach an agent how to walk and even to localize it in relative to an arbitrary aim
+As you can see in the following video the trained agent always tries to follow the red dot.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIs9NMIHulU" frameborder="0" allowfullscreen></iframe>
 
 The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
