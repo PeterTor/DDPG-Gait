@@ -18,7 +18,7 @@ The agents learns by using the deep deterministic policy gradient approach by (L
 Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
 The following pseudocode tries to show the DDPG Algorithm by (Lillicrap et al., 2015). <br>
-![alt-text-0](robot/pseudocode) 
+<img src="robot/pseudocode" alt="hi" class="inline" width="70%"/> <br>
 The critic is training by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair.  
 Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
 
