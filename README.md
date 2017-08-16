@@ -17,8 +17,10 @@ The aim of this project is to teach an agent how to walk by itself. As you can s
 The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
 Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
+
+### The model 
 The following pseudocode tries to show the DDPG Algorithm by (Lillicrap et al., 2015). <br>
-<img src="robot/pseudocode" alt="hi" class="inline" width="70%"/> <br>
+<img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
 The critic is training by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair.  
 Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
 
@@ -26,6 +28,7 @@ In order to define a reward we define this simple equation:<br>
 ![alt-text-1](http://mathurl.com/ybfraejf.png)<br>
 Wherby delta is the distance to the red object at time t in the video. 
 
+### Results
 The following picture shows the learned gait pattern when the robot is walking straightforward.<br>
 <img src="robot/diagram.png" alt="hi" class="inline" width="70%"/> <br>
 As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
