@@ -16,51 +16,24 @@ The aim of this project is to teach an agent how to walk by itself. As you can s
 The agents learns by using the deep deterministic policy gradient approach by (Lillicrap et al., 2015).
 Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It does so by getting judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
+The following pseudocode tries to show the DDPG Algorithm by (Lillicrap et al., 2015).
+
+![alt-text-0](robot/pseudocode.png)
+
+The critic is training by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus only one Q-value per state-action pair.  
 Because of the huge continuous state and action space the training of the neural networks with a fast GPU is inevitable. 
-The following pseudocode tries to show how the Algorithm by (Lillicrap et al., 2015) works.
 
 In order to define a reward we define this simple equation:
-<img src="http://mathurl.com/ybfraejf.png" alt="hi" class="inline" width="100%"/>
 ![alt-text-1](http://mathurl.com/ybfraejf.png)
 
-Wherby delta is the distance to the red object at time t. We are trying
+Wherby delta is the distance to the red object at time t in the video. 
 
 The following picture shows the learned gait pattern when the robot is walking straightforward.
-![alt-text-1](robot/diagram.png)
+![alt-text-2](robot/diagram.png)
 As you can see it follows a natural trot gait by always lifting the diagonally opposite leg. 
 # References:
 [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) 
 
 [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WHAAAT/DDPG-Gait/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
