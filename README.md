@@ -20,7 +20,7 @@ Because of the huge continuous state and action space the training of the neural
 The following pseudocode tries to show how the Algorithm by (Lillicrap et al., 2015) works.
 
 In order to define a reward we define this simple equation:
-
+<img src="http://mathurl.com/ybfraejf.png" alt="hi" class="inline" width="100%"/>
 ![alt-text-1](http://mathurl.com/ybfraejf.png)
 
 Wherby delta is the distance to the red object at time t. We are trying
