@@ -33,13 +33,11 @@ However state, reward, actions and the enviornment need to be defined:
 <div align="center">
 <img src="http://mathurl.com/yd8axedl.png" alt="hi" class="inline"/>
 </div>
-
-. <br>
 Wherby theta defines the servo angle at time t.
 3. **State** the state can be defined as action taken in t-1. However in order to localize the agent relative to the red ball we added angle and distance relative to an abritary aim. 
 4. **Reward** In order to get an reward we defined the moved distance from time t-1 to t. 
 <div align="center">
- ![alt-text-1](http://mathurl.com/ybfraejf.png)
+<img src="http://mathurl.com/ybfraejf.png" alt="hi" class="inline"/>
 </div>
 
 
