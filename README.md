@@ -29,7 +29,7 @@ The equation was derived by (Silver et al., 2014).
 
 However state, reward, actions and the enviornment need to be defined:
 
-1. **Environment_** The Enviornment is given by the Simulator. 
+1. **Environment** The Enviornment is given by the Simulator. 
 2. **Actions** the most straighforward approach is to define the actions by a 12 dimensional vector <br> 
 
 <div align="center">
