@@ -21,6 +21,9 @@ Our approach is called DDPG-Gait and consists of two neural networks.
 The first neural network (the actor) generates the 12 continuous servo positions directly. It gets judged from the second neural network (the critic), that evaluates the state and actions taken by trying to maximize its reward. 
 
 ### The model 
+<div align="center">
+<img src="robot/NeuralNetwork.jpg" alt="hi" class="inline"/>
+</div>
 The following pseudocode shows the DDPG Algorithm by (Lillicrap et al., 2015). <br>
 <img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
 
