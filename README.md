@@ -22,11 +22,15 @@ The first neural network (the actor) generates the 12 continuous servo positions
 
 ### The model 
 <div align="center">
-<img src="robot/NeuralNetwork.jpg" alt="hi" class="inline"/>
+<img src="robot/NeuralNetwork.jpg" alt="hi" class="inline" width="60%"/>
 </div>
+As you can see in the picture above the model is based on two neural networks.
+1. The Critic-Network consists of two hiddenlayer with Sigmoid activation.  
+2. The Actor-Network consists of two hiddenlayers with relu activation. For the Output-layer a tanh-function is used in order to map the output the servo angles.<br>
+We used latin hypercube sampling to obtain the Hyperparameters for our model. 
+To obtain these and to train the neural networks a single Titan X (pascal) was used. 
 The following pseudocode shows the DDPG Algorithm by (Lillicrap et al., 2015). <br>
 <img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
-
 The critic is trained by minimizing the bellman equation in line 11. But in contrast to Deep-Q-Learning it only outpus one Q-value per state-action pair. The actor on the other hand can be trained by directly applying the gradient in line 14. 
 The equation was derived by (Silver et al., 2014). 
 
