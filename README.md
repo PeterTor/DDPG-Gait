@@ -30,8 +30,8 @@ As you can see in the picture above the model is based on two neural networks.
 2. The Actor-Network consists of two hiddenlayers with relu activation. For the Output-layer a tanh-function is used in order to map the output the servo angles.
 
 
-We used latin hypercube sampling to obtain the Hyperparameters for our model. 
-To obtain these and to train the neural networks a single Titan X (pascal) was used. 
+We used latin hypercube sampling to obtain the Hyperparameters for our model. For
+training and tuning the neural networks a single Titan X (pascal) was used. 
 
 The following pseudocode shows the DDPG Algorithm by (Lillicrap et al., 2015). <br>
 <img src="robot/pseudocode" alt="hi" class="inline" width="80%"/> <br>
